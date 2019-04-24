@@ -39,7 +39,7 @@ p, address {
 }
 
 figure {
-  margin:0 0 10px;
+  margin:0 auto;
 }
 
 figcaption {
@@ -112,7 +112,6 @@ iframe {
 
 .shadow {
   box-shadow: 0 3px 10px #333;
-
 }
 
 .milk_text {
@@ -303,19 +302,22 @@ footer a {
   text-decoration: underline;
 }
 
-.col1 {
+/* code examples copyright Jonathan Grover 2012 */
+
+.col-1 {
+  width: 66%;
   float: left;
-  width: 33.333%;
 }
 
-.col2 {
+.col-2{
+  width: 32%;
   float: left;
-  width: 33.333%;
 }
 
-.col3 {
+.col-3{
+  width: 30%;
+  margin-top: 10px;
   float: left;
-  width: 33.333%;
 }
 
 .clearfix:after{
@@ -326,4 +328,15 @@ visibility: hidden;
 height: 0;
 line-height: 0;
 }
-/* code examples copyright Jonathan Grover 2012 */
+
+[class*="col-"]{
+  margin-left: 2%;
+}
+
+.firts {
+  margin-left: 0%;
+}
+
+section .shadow img {
+  position: hover;
+}
